@@ -16,3 +16,30 @@ p1.addEventListener('mouseleave', function run() {
     p1.style.backgroundColor = "white"
 })
 
+p2.addEventListener('click', function run() {
+    p2.style.backgroundColor = "yellow"
+    
+})
+
+p2.addEventListener('mouseout', function run() {
+    p2.style.backgroundColor = "white"
+    
+})
+
+p3.addEventListener('mouseover', function run() {
+    p3.style.color = "green"
+    
+})
+
+p3.addEventListener('mouseleave', function run() {
+    p3.style.color = "black"
+    
+})
+
+p4.addEventListener('dblclick', function run() {
+    p4.style.fontSize = "large"
+    
+})
+
+
+
