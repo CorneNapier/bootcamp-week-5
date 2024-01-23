@@ -1,0 +1,12 @@
+* {
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+}
