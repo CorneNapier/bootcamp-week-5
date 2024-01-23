@@ -1,6 +1,5 @@
 * {
     background-color: bisque;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -10,3 +9,14 @@ a {
 nav ul {
     list-style: none;
 }
+
+#openings {
+    margin-top: 20px;
+}
+
+#interest {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
