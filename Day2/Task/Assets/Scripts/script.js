@@ -14,6 +14,7 @@ btn.addEventListener("click", function run() {
         btn.innerText = "Food Menu"
     }
 })
+
 //Task2
 let links = document.querySelectorAll('nav a');
 
@@ -31,6 +32,7 @@ for (let i = 0; i < links.length; i++) {
         links[i].style.fontSize = "";
 
     })
+
 }
 //Task3
 let openings = document.getElementById('openings');
@@ -42,6 +44,7 @@ openings.addEventListener('mouseenter', function run() {
 openings.addEventListener('mouseleave', function run() {
     openings.style.fontSize = "";
 })
+
 //Task4
 let myInput = document.getElementsByTagName('input')
 
@@ -53,4 +56,23 @@ for (let i = 0; i < myInput.length; i++) {
         input.style.color = "red";
     })
 
+}
+
+// Extension Task
+function myMove() {
+    let id = null;
+    let square = document.getElementById('square');
+    let pos = 0;
+    clearInterval(id);
+
+    id = setInterval(frame, 10);
+    function frame() {
+        if (pos == 350) {
+            clearInterval(id)
+        } else {
+            pos++
+            square.style.top = pos + "px";
+            square.style.backgroundColor = "red";
+        }
+    }
 }
