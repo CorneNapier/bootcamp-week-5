@@ -21,12 +21,12 @@ function add() {
   //result is converted to a string and applied to the value property of our result input
 };
 
-function minus() {
-  function minus1(valueOne, valueTwo) {
+function subtract() {
+  function minus(valueOne, valueTwo) {
     return Number(valueOne) - Number(valueTwo);
   };
 
-  let sum = minus1(numberOne.value, numberTwo.value);
+  let sum = minus(numberOne.value, numberTwo.value);
   result.value = sum.toString();
 }
 
