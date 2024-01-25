@@ -67,7 +67,32 @@ setUTCDate() - Sets the day of the month according to universal time
 // const date = currentDate.getDate();
 // const month = currentDate.getMonth();
 // const year = currentDate.getFullYear();
+// const timeHr = currentDate.getHours();
+// const timeMin = currentDate.getMinutes();
+// const timeSec = currentDate.getSeconds();
 
-// let monthDateYear = date + '/' + (month+1) + '/' + year;
-// console.log(monthDateYear);
+// let monthDateYearTime = date + '/' + (month+1) + '/' + year +  '/' + timeHr + ':' + timeMin + ':' + timeSec;
+// console.log(monthDateYearTime);
 
+// let p = document.getElementById('date');
+// function displayDate() {
+//     p.append(monthDateYearTime);
+// }
+//  displayDate();
+
+//! Updates time without the need to reload page
+function updatingClock() {
+    var currentTime = new Date(),
+        month = currentTime.getMonth() + 1,
+        day = currentTime.getDate(),
+        year = currentTime.getFullYear(),
+        hours = currentTime.getHours(),
+        minutes = currentTime.getMinutes(),
+        seconds = currentTime.getSeconds(),
+        text = (month + "/" + day + "/" + year + ' ' + hours + ':' + minutes + ':' + seconds);
+    // here we get the element with the id of "date" and change the content to the text variable we made above
+    document.getElementById('date').innerHTML = text;
+  }
+  
+  // here we run the updatingClock function every 1000ms (1 second)
+  setInterval(updatingClock, 1000);
